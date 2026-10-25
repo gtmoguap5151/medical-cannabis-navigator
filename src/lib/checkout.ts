@@ -5,7 +5,7 @@
  * handled by this app.
  */
 
-export const STRIPE_PAYMENT_LINK = 'https://buy.stripe.com/8x2eVcdP7aWOcVEenOgrS09';
+export const STRIPE_PAYMENT_LINK = 'https://buy.stripe.com/bJedR83atgh85tc7ZqgrS0a';
 
 export interface CheckoutResult {
   status: 'redirect' | 'error';
