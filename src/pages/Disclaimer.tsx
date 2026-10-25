@@ -19,7 +19,7 @@ const notProvided = [
 export default function Disclaimer() {
   return (
     <>
-      <Seo title="Disclaimer" description="Medical Cannabis Navigator provides general educational information only. It does not provide medical or legal services." path="/disclaimer" />
+      <Seo title="Disclaimer" description="Leaf Compass provides general educational information only. It does not provide medical or legal services." path="/disclaimer" />
       <section className="border-b border-ink-100 bg-gradient-to-b from-forest-50 to-sand-50">
         <div className="container-page py-10 sm:py-12">
           <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-sand-200 text-sand-800">

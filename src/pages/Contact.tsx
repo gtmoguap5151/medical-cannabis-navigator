@@ -42,7 +42,7 @@ export default function Contact() {
 
   return (
     <>
-      <Seo title="Contact" description="Get in touch with the Medical Cannabis Navigator team." path="/contact" />
+      <Seo title="Contact" description="Get in touch with the Leaf Compass team." path="/contact" />
       <section className="border-b border-ink-100 bg-gradient-to-b from-forest-50 to-sand-50">
         <div className="container-page py-10 sm:py-12">
           <h1 className="font-display text-3xl font-semibold text-ink-900 sm:text-4xl">Contact Us</h1>

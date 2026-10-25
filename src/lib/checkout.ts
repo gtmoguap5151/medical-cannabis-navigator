@@ -1,23 +1,30 @@
 /**
- * Checkout abstraction — payment is NOT yet connected.
- * This is the single integration point that Stripe Checkout will
- * plug into later without rebuilding the rest of the application.
+ * Checkout — connected to Stripe Payment Links.
+ * This is the single integration point: the enroll button sends the
+ * buyer to the hosted Stripe checkout page. No card data is ever
+ * handled by this app.
  */
 
+export const STRIPE_PAYMENT_LINK = 'https://buy.stripe.com/8x2eVcdP7aWOcVEenOgrS09';
+
 export interface CheckoutResult {
-  status: 'coming-soon' | 'error';
+  status: 'redirect' | 'error';
   message: string;
 }
 
 export async function startCheckout(): Promise<CheckoutResult> {
-  // Stripe is intentionally not wired up yet. When it is, this function
-  // will create a Checkout Session and redirect the browser to the
-  // hosted payment page. No card data is ever handled by this app.
-  return {
-    status: 'coming-soon',
-    message:
-      'Online checkout is coming soon. You can explore the full course and all features now — payment will be enabled shortly.',
-  };
+  try {
+    window.location.href = STRIPE_PAYMENT_LINK;
+    return {
+      status: 'redirect',
+      message: 'Redirecting to secure checkout…',
+    };
+  } catch {
+    return {
+      status: 'error',
+      message: 'Checkout could not be opened. Please try again.',
+    };
+  }
 }
 
 export const PRICE_USD = 49;

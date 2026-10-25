@@ -23,7 +23,7 @@ export default function Enroll() {
     <>
       <Seo
         title="Start the Course"
-        description="Get full access to the Medical Cannabis Navigator educational course for a one-time payment of $49. No subscription."
+        description="Get full access to the Leaf Compass educational course for a one-time payment of $49. No subscription."
         path="/enroll"
       />
       <section className="relative overflow-hidden border-b border-ink-100 bg-gradient-to-b from-forest-50 to-sand-50">
@@ -34,7 +34,7 @@ export default function Enroll() {
           </Link>
           <div className="mx-auto mt-8 max-w-2xl text-center">
             <h1 className="font-display text-3xl font-semibold text-ink-900 sm:text-4xl">
-              Start the Medical Cannabis Navigator Course
+              Start the Leaf Compass Course
             </h1>
             <p className="mt-4 text-lg text-ink-600">
               One-time payment of ${PRICE_USD}. Lifetime access. No subscription.
@@ -69,7 +69,7 @@ export default function Enroll() {
                 <CheckoutButton fullWidth label={`Start the Course — $${PRICE_USD}`} className="py-4 text-lg" />
                 <div className="mt-4 flex items-center justify-center gap-2 text-xs text-ink-500">
                   <Lock className="h-4 w-4" />
-                  Secure checkout is being connected. No card information is collected yet.
+                  Secure checkout by Stripe. No card information is collected on this site.
                 </div>
               </div>
             </div>
@@ -79,7 +79,7 @@ export default function Enroll() {
             <p className="m-0">
               <strong className="text-ink-900">Important:</strong> This is an educational course. It does not provide
               medical evaluations, medical cards, prescriptions, recommendations, legal advice, or any guarantee of
-              approval. You can explore the full course and all features now while checkout is being set up.
+              approval. You can explore the full course and all features now.
             </p>
           </div>
 

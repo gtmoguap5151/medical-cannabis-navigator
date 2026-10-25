@@ -48,7 +48,7 @@ export default function Certificate() {
 
   return (
     <>
-      <Seo title="Certificate of Completion" description="Your Medical Cannabis Navigator course-completion certificate." path="/certificate" />
+      <Seo title="Certificate of Completion" description="Your Leaf Compass course-completion certificate." path="/certificate" />
       <section className="container-page py-10 sm:py-12">
         <Link to="/course" className="inline-flex items-center gap-1.5 text-sm font-medium text-forest-700 hover:text-forest-800">
           <ArrowLeft className="h-4 w-4" /> Back to Course
@@ -56,7 +56,7 @@ export default function Certificate() {
 
         <div className="mt-6 max-w-3xl">
           <h1 className="font-display text-3xl font-semibold text-ink-900">Course Completion Certificate</h1>
-          <p className="mt-2 text-ink-600">Congratulations on finishing the Medical Cannabis Navigator course.</p>
+          <p className="mt-2 text-ink-600">Congratulations on finishing the Leaf Compass course.</p>
         </div>
 
         {!state.certificateName && (
@@ -89,14 +89,14 @@ export default function Certificate() {
                   <LeafMark className="h-5 w-5" />
                 </span>
                 <span className="font-display text-lg font-semibold text-ink-900">
-                  Medical Cannabis Navigator<span className="align-super text-[0.6em]">&trade;</span>
+                  Leaf Compass<span className="align-super text-[0.6em]">&trade;</span>
                 </span>
               </div>
 
               <p className="mt-8 text-xs font-semibold uppercase tracking-[0.2em] text-forest-600">Certificate of Completion</p>
               <p className="mt-6 text-sm text-ink-500">This certificate recognizes the completion of the</p>
               <h2 className="mt-2 font-display text-2xl font-semibold text-ink-900 sm:text-3xl">
-                Medical Cannabis Navigator Educational Course
+                Leaf Compass Educational Course
               </h2>
 
               <div className="mx-auto my-8 h-px w-24 bg-forest-200" />

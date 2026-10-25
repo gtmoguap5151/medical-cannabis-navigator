@@ -46,7 +46,7 @@ const sections = [
 export default function Privacy() {
   return (
     <>
-      <Seo title="Privacy" description="Privacy policy for the Medical Cannabis Navigator educational course." path="/privacy" />
+      <Seo title="Privacy" description="Privacy policy for the Leaf Compass educational course." path="/privacy" />
       <section className="border-b border-ink-100 bg-gradient-to-b from-forest-50 to-sand-50">
         <div className="container-page py-10 sm:py-12">
           <h1 className="font-display text-3xl font-semibold text-ink-900 sm:text-4xl">Privacy Policy</h1>

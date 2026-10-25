@@ -15,7 +15,7 @@ export default function Course() {
     <>
       <Seo
         title="Course Dashboard"
-        description="Track your progress through the 10-module Medical Cannabis Navigator educational course — lessons, quizzes, and your completion certificate."
+        description="Track your progress through the 10-module Leaf Compass educational course — lessons, quizzes, and your completion certificate."
         path="/course"
       />
 

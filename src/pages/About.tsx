@@ -29,13 +29,13 @@ const pillars = [
 export default function About() {
   return (
     <>
-      <Seo title="About" description="Medical Cannabis Navigator is an independent educational platform that helps adults understand the medical cannabis landscape and navigate the process responsibly." path="/about" />
+      <Seo title="About" description="Leaf Compass is an independent educational platform that helps adults understand the medical cannabis landscape and navigate the process responsibly." path="/about" />
       <section className="relative overflow-hidden border-b border-ink-100 bg-gradient-to-b from-forest-50 to-sand-50">
         <BotanicalCorner className="pointer-events-none absolute -right-8 top-8 h-56 w-56 text-forest-300/40" />
         <div className="container-page relative py-12 sm:py-16">
-          <h1 className="font-display text-3xl font-semibold text-ink-900 sm:text-4xl">About Medical Cannabis Navigator</h1>
+          <h1 className="font-display text-3xl font-semibold text-ink-900 sm:text-4xl">About Leaf Compass</h1>
           <p className="mt-4 max-w-2xl text-lg text-ink-600">
-            We built Medical Cannabis Navigator to help adults understand a confusing landscape — clearly,
+            We built Leaf Compass to help adults understand a confusing landscape — clearly,
             responsibly, and without overpromising.
           </p>
         </div>
@@ -45,7 +45,7 @@ export default function About() {
         <div className="mx-auto max-w-3xl">
           <h2 className="font-display text-2xl font-semibold text-ink-900">Our purpose</h2>
           <p className="mt-4 text-ink-700 leading-relaxed">
-            Medical Cannabis Navigator&trade; is an independent educational platform. We do not provide medical
+            Leaf Compass is an independent educational platform. We do not provide medical
             evaluations, certifications, medical cards, prescriptions, recommendations, legal advice, or any
             guarantee of approval. Instead, we help people understand how the system generally works, learn how state
             programs are structured, prepare for the process, understand products and responsible use, and verify

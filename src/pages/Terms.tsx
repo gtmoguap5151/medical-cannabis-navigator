@@ -3,7 +3,7 @@ import { Seo } from '@/components/Seo';
 const sections = [
   {
     h: 'Educational purpose',
-    p: 'Medical Cannabis Navigator provides general educational information about cannabis, state medical cannabis programs, products, safety, and the legal landscape. The course is designed to help you understand the system, know your options, and navigate the process of researching your own situation through official sources.',
+    p: 'Leaf Compass provides general educational information about cannabis, state medical cannabis programs, products, safety, and the legal landscape. The course is designed to help you understand the system, know your options, and navigate the process of researching your own situation through official sources.',
   },
   {
     h: 'No medical advice',
@@ -27,7 +27,7 @@ const sections = [
   },
   {
     h: 'Intellectual property',
-    p: 'All course content, including lessons, quizzes, the State Navigator, the Personal Cannabis Roadmap, designs, and text, is owned by Medical Cannabis Navigator and protected by intellectual property laws. You may use the course for your own personal education. You may not copy, redistribute, or resell the content without permission.',
+    p: 'All course content, including lessons, quizzes, the State Navigator, the Personal Cannabis Roadmap, designs, and text, is owned by Leaf Compass and protected by intellectual property laws. You may use the course for your own personal education. You may not copy, redistribute, or resell the content without permission.',
   },
   {
     h: 'Account responsibilities',
@@ -35,7 +35,7 @@ const sections = [
   },
   {
     h: 'Limitation of liability',
-    p: 'The course is provided "as is" for educational purposes. To the fullest extent permitted by law, Medical Cannabis Navigator is not liable for any damages arising from your use of, or reliance on, the course content, including any action taken or not taken based on the information provided. You use the course at your own risk.',
+    p: 'The course is provided "as is" for educational purposes. To the fullest extent permitted by law, Leaf Compass is not liable for any damages arising from your use of, or reliance on, the course content, including any action taken or not taken based on the information provided. You use the course at your own risk.',
   },
   {
     h: 'Changes to these terms',
@@ -50,7 +50,7 @@ const sections = [
 export default function Terms() {
   return (
     <>
-      <Seo title="Terms" description="Terms of use for the Medical Cannabis Navigator educational course." path="/terms" />
+      <Seo title="Terms" description="Terms of use for the Leaf Compass educational course." path="/terms" />
       <section className="border-b border-ink-100 bg-gradient-to-b from-forest-50 to-sand-50">
         <div className="container-page py-10 sm:py-12">
           <h1 className="font-display text-3xl font-semibold text-ink-900 sm:text-4xl">Terms of Use</h1>

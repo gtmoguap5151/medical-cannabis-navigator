@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
 import { startCheckout } from '@/lib/checkout';
 
 interface CheckoutButtonProps {
@@ -9,36 +8,24 @@ interface CheckoutButtonProps {
 }
 
 export function CheckoutButton({ className = '', label = 'Start the Course — $49', fullWidth }: CheckoutButtonProps) {
-  const [state, setState] = useState<'idle' | 'loading' | 'coming-soon'>('idle');
-  const navigate = useNavigate();
+  const [state, setState] = useState<'idle' | 'loading' | 'error'>('idle');
 
   async function handleClick() {
     setState('loading');
     const result = await startCheckout();
-    if (result.status === 'coming-soon') {
-      setState('coming-soon');
-    } else {
-      setState('idle');
+    if (result.status === 'error') {
+      setState('error');
     }
+    // On redirect, the browser leaves this page for Stripe Checkout.
   }
 
-  if (state === 'coming-soon') {
+  if (state === 'error') {
     return (
       <div className={`flex flex-col gap-2 ${fullWidth ? 'w-full' : ''}`}>
-        <button type="button" onClick={handleClick} className={`btn-secondary ${className} ${fullWidth ? 'w-full' : ''}`}>
-          Checkout coming soon
+        <button type="button" onClick={handleClick} className={`btn-primary ${className} ${fullWidth ? 'w-full' : ''}`}>
+          {label}
         </button>
-        <p className="text-xs text-ink-500">
-          Online checkout is being set up. You can{' '}
-          <button
-            type="button"
-            className="font-medium text-forest-700 underline underline-offset-2"
-            onClick={() => navigate('/course')}
-          >
-            explore the full course now
-          </button>
-          .
-        </p>
+        <p className="text-xs text-ink-500">Checkout didn&apos;t open. Please try again.</p>
       </div>
     );
   }

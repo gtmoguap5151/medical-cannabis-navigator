@@ -25,7 +25,7 @@ export function Navbar() {
           </span>
           <span className="flex flex-col leading-none">
             <span className="font-display text-lg font-semibold text-ink-900">
-              Cannabis Navigator<span className="align-super text-[0.6em]">&trade;</span>
+              Leaf Compass
             </span>
             <span className="text-[0.68rem] font-medium uppercase tracking-wider text-forest-600">Medical Education Course</span>
           </span>

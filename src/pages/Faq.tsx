@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 const faqs = [
   {
     q: 'What does the $49 purchase include?',
-    a: 'Full access to the 10-module Medical Cannabis Navigator course — all lessons, interactive quizzes, progress tracking, the State Navigator, the Personal Cannabis Roadmap, the final assessment, a course-completion certificate, and educational reference material. It is a one-time purchase with no subscription.',
+    a: 'Full access to the 10-module Leaf Compass course — all lessons, interactive quizzes, progress tracking, the State Navigator, the Personal Cannabis Roadmap, the final assessment, a course-completion certificate, and educational reference material. It is a one-time purchase with no subscription.',
   },
   {
     q: 'Is this a subscription?',
@@ -87,7 +87,7 @@ function FaqItem({ q, a }: { q: string; a: string }) {
 export default function Faq() {
   return (
     <>
-      <Seo title="FAQ" description="Frequently asked questions about the Medical Cannabis Navigator educational course, pricing, certificate, and state requirements." path="/faq" />
+      <Seo title="FAQ" description="Frequently asked questions about the Leaf Compass educational course, pricing, certificate, and state requirements." path="/faq" />
       <section className="border-b border-ink-100 bg-gradient-to-b from-forest-50 to-sand-50">
         <div className="container-page py-10 sm:py-12">
           <h1 className="font-display text-3xl font-semibold text-ink-900 sm:text-4xl">Frequently Asked Questions</h1>

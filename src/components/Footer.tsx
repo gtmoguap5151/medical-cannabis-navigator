@@ -41,7 +41,7 @@ export function Footer() {
                 <LeafMark className="h-5 w-5" />
               </span>
               <span className="font-display text-lg font-semibold text-white">
-                Cannabis Navigator<span className="align-super text-[0.6em]">&trade;</span>
+                Leaf Compass
               </span>
             </div>
             <p className="mt-4 text-sm leading-relaxed text-forest-200/80">
@@ -66,13 +66,13 @@ export function Footer() {
         </div>
 
         <div className="mt-12 rounded-2xl border border-forest-800/60 bg-forest-900/50 p-5 text-xs leading-relaxed text-forest-200/80">
-          <strong className="text-forest-100">Important:</strong> Medical Cannabis Navigator&trade; is an educational course only. We do not provide medical
+          <strong className="text-forest-100">Important:</strong> Leaf Compass is an educational course only. We do not provide medical
           evaluations, certifications, medical cards, prescriptions, recommendations, legal advice, or any guarantee of approval, and we make no medical
           claims. Always verify current requirements through official government sources and consult licensed professionals.
         </div>
 
         <div className="mt-8 flex flex-col items-center justify-between gap-3 border-t border-forest-800/60 pt-6 text-xs text-forest-300/70 sm:flex-row">
-          <p>&copy; {new Date().getFullYear()} Medical Cannabis Navigator. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Leaf Compass. All rights reserved.</p>
           <p>Educational content — not medical or legal advice.</p>
         </div>
       </div>

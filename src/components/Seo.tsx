@@ -6,7 +6,7 @@ interface SeoProps {
   path?: string;
 }
 
-const SITE_NAME = 'Medical Cannabis Navigator';
+const SITE_NAME = 'Leaf Compass';
 
 export function Seo({ title, description, path }: SeoProps) {
   useEffect(() => {
@@ -39,7 +39,7 @@ export function Seo({ title, description, path }: SeoProps) {
     setOg('og:title', fullTitle);
     setOg('og:site_name', SITE_NAME);
     setOg('og:type', 'website');
-    if (path) setOg('og:url', `https://medicalcannabisnavigator.com${path}`);
+    if (path) setOg('og:url', `https://medicalcannabisnavigator.center${path}`);
   }, [title, description, path]);
 
   return null;
