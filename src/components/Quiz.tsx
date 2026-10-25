@@ -78,7 +78,7 @@ export function Quiz({ questions, onComplete, title = 'Knowledge check' }: QuizP
                     disabled={submitted}
                     className={`flex items-center justify-between gap-3 rounded-xl border px-4 py-3 text-left text-sm transition-all ${cls} ${
                       submitted ? 'cursor-default' : ''
-                    }`
+                    }`}
                   >
                     <span>{opt}</span>
                     {submitted && isCorrect && <Check className="h-4 w-4 flex-shrink-0 text-forest-600" />}
